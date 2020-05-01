@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'about-me';
+
+  toggleActive: boolean = false;
+
+  toggle() {
+    this.toggleActive = !this.toggleActive
+  }
 }
